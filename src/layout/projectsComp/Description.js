@@ -1,0 +1,12 @@
+import React from 'react';
+// import { NavLink, Outlet } from 'react-router-dom';
+
+export default function Description() {
+    return (
+        <textarea readOnly className='description-container' name="description" id="description" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores doloremque, deserunt nisi incidunt pariatur esse eaque non corporis! Eaque fugiat aspernatur corrupti rerum cum perspiciatis molestiae debitis consectetur quibusdam, voluptate omnis obcaecati quas reiciendis temporibus odio explicabo provident perferendis, commodi, cumque modi maxime nemo ipsam laborum cupiditate? Ullam exercitationem ut quae, quam at quis similique commodi? Assumenda eum sed totam fugit repellat nam corrupti a itaque veniam explicabo quidem deserunt possimus non commodi beatae molestias ad minima accusamus exercitationem, labore unde quibusdam debitis. Est pariatur blanditiis, eius molestiae quaerat qui, molestias dolore aspernatur quas, aliquam esse illum ullam quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident natus repellendus facilis unde, debitis ipsum neque id ad vel tempora ullam deserunt beatae voluptatem itaque aperiam nemo assumenda labore accusamus expedita temporibus! Amet blanditiis accusantium possimus ex mollitia ipsum, ut aliquam laudantium esse vel totam corrupti impedit natus ipsa veritatis id voluptatibus laboriosam sequi quae? Ratione quam perferendis ullam quisquam eius sunt, vel, quos saepe quibusdam, earum natus? Suscipit eius obcaecati rem nulla commodi iure aut optio deserunt necessitatibus sequi unde velit accusantium assumenda adipisci repellendus aliquam voluptas maxime, quasi culpa perspiciatis molestiae! Exercitationem amet cumque praesentium labore suscipit quasi? Suscipit nulla mollitia consequuntur blanditiis hic reprehenderit debitis voluptas assumenda. Tempora provident, adipisci commodi itaque, aut sequi hic pariatur quidem reiciendis repudiandae aspernatur quam sint id nostrum quisquam recusandae, animi nesciunt vitae ad minima sed obcaecati et nisi earum. Maiores libero et beatae alias corporis, nostrum ex, laudantium unde pariatur autem reiciendis minus! Iusto eligendi temporibus eos at laborum velit assumenda ad, corrupti quae saepe impedit hic sapiente nihil corporis dolorem veritatis quo animi. Eligendi consectetur accusantium esse nulla tempore veritatis? Aperiam velit itaque id non odit quisquam ex nemo totam cum. Cumque recusandae deleniti laborum nulla! Provident, aliquam? Rerum!
+        </textarea>
+
+    );
+}
