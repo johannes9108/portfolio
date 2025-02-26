@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "http://johannes9108.github.io/portfolio/static/css/main.d803e33d.css",
+    "main.js": "http://johannes9108.github.io/portfolio/static/js/main.8fa04fae.js",
+    "static/js/453.1407b060.chunk.js": "http://johannes9108.github.io/portfolio/static/js/453.1407b060.chunk.js",
+    "index.html": "http://johannes9108.github.io/portfolio/index.html",
+    "main.d803e33d.css.map": "http://johannes9108.github.io/portfolio/static/css/main.d803e33d.css.map",
+    "main.8fa04fae.js.map": "http://johannes9108.github.io/portfolio/static/js/main.8fa04fae.js.map",
+    "453.1407b060.chunk.js.map": "http://johannes9108.github.io/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d803e33d.css",
+    "static/js/main.8fa04fae.js"
+  ]
+}
