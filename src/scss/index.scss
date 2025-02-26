@@ -1,0 +1,303 @@
+// Define theme variables
+$primary-color: #706f70;
+$secondary-color: #26385e;
+$accent-color: #070f13;
+$text-color: #ffffff;
+$link-hover-color: rgb(148, 194, 236);
+$background-color: rgb(37, 3, 65);
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$code-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+$border-radius: 2px;
+
+// Global styles
+*,
+*::before,
+*::after,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font: 22px sans-serif;
+
+}
+
+body,
+#root {
+  color: $text-color;
+  height: 100vh;
+  background-color: $primary-color;
+  position: relative;
+}
+
+a,
+a:visited {
+  color: $text-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-hover-color;
+}
+
+li {
+  list-style-type: none;
+}
+
+code {
+  font-family: $code-font-family;
+}
+
+.root-layout {
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 100px auto;
+
+  &>* {
+    // padding-inline: 1rem;
+  }
+
+  .App-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $text-color;
+
+    .navBar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: $secondary-color;
+      padding: 10px;
+      border-radius: $border-radius;
+      margin: 1rem;
+
+      &>li {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .App-mainContent {
+    font-size: calc(10px + 2vmin);
+    background-color: $primary-color ;
+
+    &>*>* {
+      padding: 1rem;
+      box-shadow: $accent-color 0px 0px 5px;
+      border-radius: $border-radius;
+    }
+
+    .projects-container {
+      height: 100%;
+      display: flex;
+
+      &>aside {
+        overflow: hidden;
+        text-overflow: clip;
+        background-color: $secondary-color;
+        padding: 1rem;
+        margin: 1rem;
+        width: 200px;
+
+        .project-nav {
+          min-height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          word-wrap: break-word;
+        }
+      }
+
+      &>section {
+        background-color: $secondary-color;
+        flex-grow: 2;
+        align-self: right;
+        justify-self: center;
+        padding: 1rem;
+        margin: 1rem;
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+
+        .description-container {
+          margin-top: 1rem;
+
+          width: 100%;
+          resize: none;
+          flex-grow: 1;
+          text-overflow: clip;
+          background-color: unset;
+          border: unset;
+          outline: unset;
+          color: $text-color;
+
+        }
+
+        .tech-container {
+          margin-top: 1rem;
+          overflow: auto;
+
+
+          &>* {
+            padding: 1rem;
+            margin: 1rem;
+            background-color: $secondary-color;
+            border-radius: $border-radius;
+            box-shadow: $accent-color 0px 0px 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .dashboard-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondary-color;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: $border-radius;
+      box-shadow: $accent-color 0px 0px 5px;
+    }
+
+    // background-color: maroon;
+  }
+
+  .resume-container {
+    // background-color: $secondary-color;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .resume-nav {
+      width: 200px;
+      background-color: $secondary-color;
+      border-radius: $border-radius;
+      // word-wrap: break-word;
+      text-overflow: clip;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    &>* {
+      padding: 1rem;
+      margin: 1rem;
+
+      & li {
+        padding: .5rem;
+      }
+    }
+
+
+
+    .resume-detail {
+      flex-grow: 2;
+      background-color: $secondary-color;
+    }
+  }
+
+
+
+  .App-footer {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $text-color;
+    border: maroon 1px solid;
+    overflow: auto;
+    font: 1rem sans-serif;
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .root-layout {
+    position: relative;
+    grid-template-rows: 100px auto;
+
+
+
+    .App-header {
+
+      position: sticky;
+      top: 0;
+
+      color: $text-color;
+
+      .navBar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $secondary-color;
+        // padding: 10px;
+        border-radius: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        text-align: center;
+
+        &>li {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .App-mainContent {
+
+      .projects-container {
+        background-color: sandybrown;
+        padding: 1rem;
+        flex-direction: column;
+
+        &>aside {
+          width: 100%;
+          margin: 0;
+        }
+
+        &>section {
+          margin: 0;
+        }
+      }
+
+      .dashboard-container {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .resume-container {
+        flex-direction: column;
+        align-items: center;
+
+        .resume-nav {
+          width: 100%;
+          border-radius: $border-radius;
+          justify-self: center;
+        }
+
+      }
+    }
+
+    .App-footer {
+      font-size: calc(8px + 2vmin);
+    }
+  }
+}
